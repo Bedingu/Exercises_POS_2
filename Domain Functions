@@ -1,0 +1,5 @@
+from sympy import Symbol, S
+from sympy.calculus.util import continuous_domain
+x = Symbol("x")
+f = (x+2)^0.5   
+continuous_domain(f,x,S.Reals())    
